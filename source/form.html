@@ -27,7 +27,81 @@
       </nav>
     </header>  
 
+    <main>      
+      <section class="profile">
+        <h1 class="profile__title">Подбор программы</h1>      
+        <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="profile__form">
+          <fieldset class="profile__personal-info">
+            <label>Имя:*
+              <input type="text" name="name" id="name" placeholder="Барсик" required>
+            </label>
+            <label>Вес(кг):*
+              <input type="number" name="weight" id="weight" placeholder="7" required>
+            </label>
+            <label>Возраст(лет):
+              <input type="number" name="age" id="age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="profile__weight">
+            <label>
+              <input type="radio" name="weight-radio" value="lose-weight" checked>
+              Похудение
+            </label>
+            <label>
+              <input type="radio" name="weight-radio" value="get-weight">
+              набор массы
+            </label>
+            <label>
+              <input type="radio" name="wieght-radio" value="no-answer">
+              Не знаю(нужен ваш совет)
+            </label>
+          </fieldset>
+          <fieldset class="profile__contact-info">
+            <legend>Контактные данные (владельца кота)</legend>
+            <label> e-mail:*
+              <input class="profile__e-mail" type="text" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label>Телефон:*
+              <input class="profile__number" type="number" name="phone-number" id="phone-number" placeholder="8(960)900-60-90" required>
+            </label>
+          </fieldset>
+          <fieldset class="profile__comment">
+            <legend>Комментарий</legend>
+            <textarea name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="profile__additional-products">
+            <legend>Дополнительно</legend>
+            <label>
+              <input type="checkbox" name="sweetener" id="sweetener" checked>
+              Сахарозаменитель
+            </label>
+            <label>
+              <input type="checkbox" name="water" id="water">
+              Питьевая вода
+            </label>
+            <label>
+              <input type="checkbox" name="milk" id="milk">
+              Молоко
+            </label>
+            <label>
+              <input type="checkbox" name="vitamins" id="vitamins">
+              Витамины
+            </label>
+            <input class="profile__send-button" type="submit" value="Отправить заявку">
+            <span class="profile__required-text">*-обязательные поля</span>
+          </fieldset>
+        </form>
+      </section>
 
+      <section class="offer">
+        <h2 class="offer__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="offer__address">ул. Большая Конюшевская, д. 19/8 Санкт-Петербург</p>
+        <div class="offer__map">
+          <!-- <iframe src="#"></iframe> -->
+        </div>
+      </section>         
+    </main>
 
     <footer class="page-footer">
         <a class="page-footer__logo" href="#">
