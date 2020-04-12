@@ -37,16 +37,16 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="profile__form">
           <fieldset class="profile__personal-info">
             <label>Имя:*
-              <input type="text" name="name" id="name" placeholder="Барсик" required>
+              <input class="profile__name" type="text" name="name" id="name" placeholder="Барсик" required>
             </label>
             <label>Вес(кг):*
-              <input type="number" name="weight" id="weight" placeholder="7" required>
+              <input class="profile__weight" type="tel" name="weight" id="weight" placeholder="7" required>
             </label>
             <label>Возраст(лет):
-              <input type="number" name="age" id="age" placeholder="7">
+              <input class="profile__age" type="number" name="age" id="age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="profile__weight">
+          <fieldset class="profile__type-of-program">
             <label>
               <input type="radio" name="weight-radio" value="lose-weight" checked>
               Похудение
@@ -56,7 +56,7 @@
               набор массы
             </label>
             <label>
-              <input type="radio" name="wieght-radio" value="no-answer">
+              <input type="radio" name="weight-radio" value="no-answer">
               Не знаю(нужен ваш совет)
             </label>
           </fieldset>
@@ -66,43 +66,56 @@
               <input class="profile__e-mail" type="text" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
             </label>
             <label>Телефон:*
-              <input class="profile__number" type="number" name="phone-number" id="phone-number" placeholder="8(960)900-60-90" required>
+              <input class="profile__number" type="tel" name="phone-number" id="phone-number" placeholder="8(960)900-60-90" required>
             </label>
           </fieldset>
           <fieldset class="profile__comment">
             <legend>Комментарий</legend>
-            <textarea name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="profile__comment-field" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="profile__additional-products">
+          <fieldset class="profile__additionals">
             <legend>Дополнительно</legend>
-            <label>
-              <input type="checkbox" name="sweetener" id="sweetener" checked>
-              Сахарозаменитель
-            </label>
-            <label>
-              <input type="checkbox" name="water" id="water">
-              Питьевая вода
-            </label>
-            <label>
-              <input type="checkbox" name="milk" id="milk">
-              Молоко
-            </label>
-            <label>
-              <input type="checkbox" name="vitamins" id="vitamins">
-              Витамины
-            </label>
-            <input class="profile__send-button" type="submit" value="Отправить заявку">
+            <ul class="additionals__list">
+              <li>
+                <label>
+                  <input type="checkbox" name="sweetener" id="sweetener" checked>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="water" id="water">
+                  Питьевая вода
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="milk" id="milk">
+                  Молоко
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="vitamins" id="vitamins">
+                  Витамины
+                </label>
+              </li>
+            </ul>
+            <input class="profile__submit" type="submit" value="Отправить заявку">
             <span class="profile__required-text">*-обязательные поля</span>
           </fieldset>
         </form>
       </section>
 
       <section class="offer">
-        <h2 class="offer__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="offer__address">ул. Большая Конюшевская, д. 19/8 Санкт-Петербург</p>
-        <div class="offer__map">
-          <!-- <iframe src="#"></iframe> -->
+        <div class="offer__text">
+          <p class="offer__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="offer__address">ул. Большая Конюшевская, д. 19/8 Санкт-Петербург</p>
         </div>
+          <div class="offer__map">
+            <!-- <imframe></inframe> -->
+            <img src="img/bg-map-mobile@1x.png" width="320" height="450" alt="ул. Большая Конюшевская, д. 19/8 Санкт-Петербург">
+          </div>
       </section>
     </main>
 
@@ -141,7 +154,7 @@
               <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
               M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
               <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-              s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>      
+              s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
               </svg>
             </a>
           </li>
