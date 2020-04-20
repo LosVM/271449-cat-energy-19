@@ -47,3 +47,145 @@
 
     background-color: #68b738;
 }
+
+.extra__present {
+    margin-left: 20px;
+    margin-bottom: 35px;
+
+    min-height: 289px;
+
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+}
+
+.extra__present-icon {
+    padding: 61px 113px 64px 111px;
+    fill:  #ffffff;
+}
+
+.extra__present-text {
+    padding: 0 60px 43px 60px;
+
+    text-align: center;
+
+    font-family: @font-arial;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+
+
+
+@media (min-width: @tablet-width) {
+    .extra {
+        margin-left: 30px;
+    }
+
+    .extra__title {
+        padding-bottom: 70px;
+        font-size: 36px;
+    }
+
+    .extra__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+
+        padding: 0;
+
+        span {
+            padding-right: 80px;
+        }
+    }
+
+    .extra__item:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    .extra__item-title {
+        font-size: 20px;
+    }
+
+    .extra__item-details {
+        font-size: 16px;
+    }
+
+    .extra__order-button { 
+        padding: 13px 287px 12px 285px;
+
+        margin-bottom: 30px;
+        margin-left: 40px;
+
+        background-color: #68b738;
+        font-size: 16px;
+    }
+
+    .extra__present {
+        display: flex;
+
+        width: 100%;
+        min-height: 200px;
+
+        background-image: url(../img/gift-photo-tablet@1x.jpg);
+    }
+
+    .extra__present-text {
+        width: 160px;
+
+        padding-top: 75px;
+        padding-left: 200px;
+        text-align: left;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .extra {
+        display: flex;
+    }
+
+    .extra__wrapper {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+    .extra__item {
+        margin: 0;
+        padding: 0;     
+
+        span {
+            padding-right: 40px;
+        }
+    }
+
+    .extra__order-button {
+        padding: 13px 91px 12px 93px;
+    }
+
+    .extra__present {
+        flex-wrap: wrap;
+
+        width: 245px;
+        min-height: 289px;
+
+        background-image: url(../img/gift-photo-desktop@1x.jpg);
+    }
+
+    .extra__present-icon {
+        width: 56px;
+        height: 61px;
+
+        padding: 0;   
+        margin: 65px 90px 0 96px;    
+    }
+
+    .extra__present-text {
+        padding: 0;
+        // padding-top: 60px;
+        // margin-left: 43px;
+        margin-left: 50px;
+
+        text-align: center;
+    }
+}

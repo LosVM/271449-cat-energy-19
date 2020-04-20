@@ -1,10 +1,16 @@
-.intro__text {
+.intro__text {    
+    display: flex;
+    flex-direction: column;
+
+    // padding-bottom: 159px;
+
     position: relative;
     min-height: 305px;
 
     color: #ffffff;
 
     background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
 }
 
 .intro__title {
@@ -19,8 +25,9 @@
 }
 
 .intro__slogan {
-    margin: 0;
-    padding: 0 62px 29px 60px;
+    margin: 0;    
+
+    padding: 0 62px 300px 60px;
 
     font-size: 14px;
     line-height: 14px;
@@ -30,6 +37,89 @@
 .intro__picture {
     position: absolute;
 
-    margin-top: 50px;
-    margin-left: -290px;
+    margin-top: 150px;
+    // margin-left: -290px;
+}
+
+.intro__search-button {
+    padding: 14px 74px 11px 73px;
+    margin-left: 20px;
+
+    background-color: #68b738;
+
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+    .intro {
+        min-height: 500px;
+    }
+
+    .intro__text {
+        padding-bottom: 20px;
+        padding-left: 120px;
+
+        color: #111111;        
+
+        background-image: none;
+        // text-align: left;
+    }
+
+    .intro__title {
+        padding-bottom: 33px;
+        width: 420px;
+
+        font-size: 60px;
+        line-height: 60px;
+        text-align: left;  
+    }
+
+    .intro__slogan {
+        padding-bottom: 48px;
+        padding-left: 0;
+        
+        font-size: 20px;
+        line-height: 20px;        
+    }
+
+    .intro__search-button {
+        margin: 0;
+        // margin-bottom: 520px;
+
+        font-size: 20px;
+    }
+
+    .intro__picture {
+        z-index: -1;
+
+        margin-top: 220px;
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .intro {
+        display: flex;
+    }
+
+    .intro__text {
+        width: 50%;
+
+        margin-top: 113px;
+    }
+
+    .intro__picture {
+        z-index: 1;
+
+        margin-left: 380px;
+    }
+
+    .intro__desktop-bg {
+        min-height: 696px;
+        width: 50%;
+
+        background-image: url("../img/index-background-desktop@1x.jpg")
+    }
 }

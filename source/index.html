@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,11 +40,15 @@
           <h2 class="intro__title">Функциональное питание для котов</h2>
           <span class="intro__slogan">Занялся собой? Займись котом!</span>
           <img class="intro__picture" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy Pro can">
+          <div>
+            <a href="#" class="intro__search-button">Подобрать программу</a>
+          </div>
         </div>
+        <div class="intro__desktop-bg"></div>
       </section>
 
       <section class="programs">
-        <a href="#" class="programs__search-button">Подобрать программу</a>
+        <h2 class="visually-hidden">Программы на выбор</h2>     
         <article class="programs__item programs__item--lose-weight">
           <h3 class="programs__title">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -57,7 +62,7 @@
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">Как это работает</h2>
+        <h3 class="advantages__title">Как это работает</h3>
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__item-picture">
@@ -86,27 +91,35 @@
         </ul>
       </section>
 
+      <h2 class="example__title">Живой пример</h2>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
-        <div class="example__data">
-          <div class="example__data-item">
-            <p class="example__data-title">5 кг</p>
-            <span class="example__data-info">Снижение веса</span>
-          </div>
-          <div class="example__data-item">
-            <p class="example__data-title">60 дней</p>
-            <span class="example__data-info">Затрачено времени</span>
+        <!-- <h2 class="example__title">Живой пример</h2> -->
+        <div class="example__wrapper">
+          <p class="example__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
+          <div class="example__content"> 
+            <div class="example__data">
+              <div class="example__data-item">
+                <p class="example__data-title">5 кг</p>
+                <span class="example__data-info">Снижение веса</span>
+              </div>
+              <div class="example__data-item">
+                <p class="example__data-title">60 дней</p>
+                <span class="example__data-info">Затрачено времени</span>
+              </div>
+            </div>
+            <span class="example__cost">Затраты на питание: 15000 руб.
           </div>
         </div>
-        <span class="example__cost">Затраты на питание: 15000 руб.</span>
-        <div class="example__cat-image">
-          <img src="img/before-mobile@1x.png" width="311" height="232" alt="Изображение кота ДО">
-        </div>
-        <div class="example__slider-before-after">
-          <span>было</span>
-          <!-- Слайдер -->
-          <span>стало</span>
+        <!-- <span class="example__cost">Затраты на питание: 15000 руб.</span> -->
+        <div class="example__visual">
+          <div class="example__cat-image">
+            <img src="img/before-mobile@1x.png" width="311" height="232" alt="Изображение кота ДО">
+          </div>
+          <div class="example__slider-before-after">
+            <span>было</span>
+            <!-- Слайдер -->
+            <span>стало</span>
+          </div>
         </div>
       </section>
 
@@ -123,9 +136,11 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#">
-        <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
-      </a>
+      <div class="page-footer__logo">  
+        <a href="#">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+        </a>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

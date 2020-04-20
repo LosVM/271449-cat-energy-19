@@ -80,15 +80,14 @@ input[type="number"] {
 .profile__e-mail {
     width: 219px;
     height: 45px;
+
+    margin-right: 200px;
+    margin-bottom: 20px;
 }
 
 .profile__number {
     width: 190px;
     height: 45px;
-}
-
-.profile__contact-info {
-    display: flex;
 }
 
 .profile__comment-field {
@@ -124,4 +123,93 @@ input[type="number"] {
 
     font-size: 14px;
     color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+    .profile {
+        label {
+            font-size: 20px;
+        }
+
+        legend {
+            font-size: 36px;
+        }
+    }
+    .profile__title {
+        font-size: 60px;
+    }
+
+    .proflie__text {
+        font-size: 20px;;
+    }
+
+    .profile__personal-info {
+        margin-bottom: 50px;
+    }
+
+    .profile__name {
+        width: 567px;
+    }
+
+    .profile__weight {
+        width: 536px;
+    }
+    .profile__age {
+        width: 497px;
+    }
+
+    .profile__e-mail {
+        width: 551px;     
+    }
+
+    .profile__phone-number {
+        width: 535px;
+        height: 51px;
+    }
+
+    .profile__comment {
+        width: 631px;
+    }
+
+    .additionals__list {
+        display: flex; 
+        flex-wrap: wrap;
+
+        li {
+            padding-bottom: 20px;
+            padding-right: 140px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .profile-wrapper {
+        display: flex;
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profile__e-mail {
+        width: 500px;    
+    }
+
+    .profile__phone-nubmer {
+        width: 472px;
+        width: 30%;
+    }
+
+    .profile__comment {
+        width: 1220px;
+    }
+
+    .additionals__list {    
+        flex-direction: row;
+
+       li {
+         padding-right: 100px;
+       }
+    }
 }
