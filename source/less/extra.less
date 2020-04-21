@@ -1,5 +1,8 @@
 .extra {
-    margin-bottom: 40px;
+    width: 320px;
+
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .extra__title {
@@ -49,8 +52,10 @@
 }
 
 .extra__present {
-    margin-left: 20px;
-    margin-bottom: 35px;
+    width: 320px;
+
+    margin: 0 auto;
+    padding-bottom: 35px;
 
     min-height: 289px;
 
@@ -74,12 +79,9 @@
     color: #ffffff;
 }
 
-
-
-
 @media (min-width: @tablet-width) {
     .extra {
-        margin-left: 30px;
+        width: 768px;
     }
 
     .extra__title {
@@ -112,7 +114,7 @@
         font-size: 16px;
     }
 
-    .extra__order-button { 
+    .extra__order-button {
         padding: 13px 287px 12px 285px;
 
         margin-bottom: 30px;
@@ -125,7 +127,7 @@
     .extra__present {
         display: flex;
 
-        width: 100%;
+        width: 768px;
         min-height: 200px;
 
         background-image: url(../img/gift-photo-tablet@1x.jpg);
@@ -143,19 +145,24 @@
 @media (min-width: @desktop-width) {
     .extra {
         display: flex;
+        width: 1200px;
+
+        margin: 0 auto;
     }
 
     .extra__wrapper {
-        width: 60%;
+        width: 900px;
         margin-right: 30px;
     }
 
     .extra__item {
+        display: flex;
+        justify-content: space-between;
         margin: 0;
-        padding: 0;     
+        padding: 0;
 
         span {
-            padding-right: 40px;
+            // padding-right: 40px;
         }
     }
 
@@ -176,8 +183,8 @@
         width: 56px;
         height: 61px;
 
-        padding: 0;   
-        margin: 65px 90px 0 96px;    
+        padding: 0;
+        margin: 65px 90px 0 96px;
     }
 
     .extra__present-text {

@@ -1,4 +1,8 @@
 .page-footer {
+    width: 320px;
+
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -36,13 +40,21 @@
 }
 
 @media (min-width: @tablet-width) {
-   .page-footer {
-       flex-direction: row;
-       align-items: baseline;
-       justify-content: space-between;
-   }
+  .page-footer {
+      width: 768px;
 
-   .social__item {
-       margin-right: 20px;
-   }
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+  }
+
+  .social__item {
+      margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+        width: 1200px;
+    }
 }

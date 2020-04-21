@@ -1,4 +1,12 @@
-.example {
+/* .example {
+    width: 320px;
+    background-color: #f2f2f2;
+}
+*/
+.example__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -74,7 +82,15 @@
 
 @media (min-width: @tablet-width) {
     .example {
+        width: 768px;
+
+        margin: 0 auto;
+
         background-color: #ffffff;
+    }
+
+    .example__wrapper {
+        width: 768px;
     }
 
     .example__title {
@@ -92,7 +108,7 @@
 
     .example__content {
         display: flex;
-        justify-content: space-around;     
+        justify-content: space-around;
     }
 
     .example__data-item {
@@ -115,6 +131,8 @@
 
 @media (min-width: @desktop-width) {
     .example {
+        width: 1200px;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -128,7 +146,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }   
+    }
 
     .example__text {
         width: 430px;
@@ -159,5 +177,5 @@
     .example__visual {
         width: 50%;
         height: 462px;
-    }   
+    }
 }

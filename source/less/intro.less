@@ -1,6 +1,13 @@
-.intro__text {    
+.intro {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.intro__text {
     display: flex;
     flex-direction: column;
+
+    // width: 260px;
 
     // padding-bottom: 159px;
 
@@ -25,9 +32,12 @@
 }
 
 .intro__slogan {
-    margin: 0;    
+    margin: 0;
 
-    padding: 0 62px 300px 60px;
+    // padding: 0 62px 300px 60px;
+    padding-bottom: 300px;
+
+    text-align: center;
 
     font-size: 14px;
     line-height: 14px;
@@ -55,13 +65,16 @@
 @media (min-width: @tablet-width) {
     .intro {
         min-height: 500px;
+        width: 420px;
+
+        margin-left: 120px;
     }
 
     .intro__text {
         padding-bottom: 20px;
-        padding-left: 120px;
+        // margin-left: -120px;
 
-        color: #111111;        
+        color: #111111;
 
         background-image: none;
         // text-align: left;
@@ -69,24 +82,28 @@
 
     .intro__title {
         padding-bottom: 33px;
-        width: 420px;
+        // width: 420px;
 
         font-size: 60px;
         line-height: 60px;
-        text-align: left;  
+        text-align: left;
     }
 
     .intro__slogan {
         padding-bottom: 48px;
-        padding-left: 0;
-        
+        // padding-left: 0;
+
+        text-align: left;
+
         font-size: 20px;
-        line-height: 20px;        
+        line-height: 20px;
     }
 
     .intro__search-button {
         margin: 0;
-        // margin-bottom: 520px;
+        padding: 17px 29px 15px 26px;
+
+        text-align: left;
 
         font-size: 20px;
     }
@@ -102,10 +119,12 @@
 @media (min-width: @desktop-width) {
     .intro {
         display: flex;
+
+        width: 1200px;
     }
 
     .intro__text {
-        width: 50%;
+        width: 600px;
 
         margin-top: 113px;
     }
@@ -118,7 +137,7 @@
 
     .intro__desktop-bg {
         min-height: 696px;
-        width: 50%;
+        width: 600px;
 
         background-image: url("../img/index-background-desktop@1x.jpg")
     }

@@ -7,27 +7,30 @@
   </head>
   <body>
     <header class="page-header page-header--inner">
-      <a class="page-header__logo" href="index.html">
+      <div class="page-header__logo__wrapper">
+      <a href="#" class="page-header__logo">
         <img src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
       </a>
       <button type="button" class="main-nav__toggle">
         <img src="img/icon-mobile-menu.svg" width="25" height="19" alt="Меню">
       </button>
+    </div>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <!-- <div class="main-nav__wrapper"> -->
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
+        <!-- </div> -->
       </nav>
+    </div>
     </header>
 
     <main>
@@ -63,7 +66,7 @@
           </fieldset>
         </div>
           <fieldset class="profile__contact-info">
-            <legend>Контактные данные (владельца кота)</legend>
+            <legend>Контактные данные <br>(владельца кота)</legend>
             <div class="contact-info-wrapper">
             <label> e-mail:*
               <input class="profile__e-mail" type="text" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -107,7 +110,7 @@
             </ul>
           </fieldset>
             <input class="profile__submit" type="submit" value="Отправить заявку">
-            <span class="profile__required-text">*-обязательные поля</span>        
+            <span class="profile__required-text">*-обязательные поля</span>
         </form>
       </section>
 

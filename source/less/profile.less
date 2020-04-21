@@ -1,4 +1,8 @@
+.profile {
+    width: 320px;
 
+    margin: 0 auto;
+}
 
 .profile__personal-info {
     display: flex;
@@ -25,6 +29,8 @@
 .profile {
     fieldset {
         border: none;
+
+        padding-bottom: 50px;
     }
 
     label {
@@ -69,6 +75,7 @@ input[type="number"] {
 .profile {
     legend {
         margin-bottom: 30px;
+
         font-size: 24px;
         line-height: 24px;
         color: #111111;
@@ -76,6 +83,7 @@ input[type="number"] {
         text-align: left;
     }
 }
+
 
 .profile__e-mail {
     width: 219px;
@@ -91,7 +99,7 @@ input[type="number"] {
 }
 
 .profile__comment-field {
-    width: 100%;
+    width: 300px;
     min-height: 150px;
 }
 
@@ -107,7 +115,6 @@ input[type="number"] {
 .profile__submit {
     padding: 13px 77px 11px 80px;
     margin-bottom: 23px;
-    margin-right: 20px;
 
     font-size: 16px;
     text-transform: uppercase;
@@ -127,6 +134,8 @@ input[type="number"] {
 
 @media (min-width: @tablet-width) {
     .profile {
+        width: 768px;
+
         label {
             font-size: 20px;
         }
@@ -135,6 +144,7 @@ input[type="number"] {
             font-size: 36px;
         }
     }
+
     .profile__title {
         font-size: 60px;
     }
@@ -159,7 +169,7 @@ input[type="number"] {
     }
 
     .profile__e-mail {
-        width: 551px;     
+        width: 540px;
     }
 
     .profile__phone-number {
@@ -168,11 +178,15 @@ input[type="number"] {
     }
 
     .profile__comment {
-        width: 631px;
+        // width: 631px;
+    }
+
+    .profile__comment-field {
+        width: 700px;
     }
 
     .additionals__list {
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
 
         li {
@@ -183,6 +197,10 @@ input[type="number"] {
 }
 
 @media (min-width: @desktop-width) {
+    .profile {
+        width: 1200px;
+    }
+
     .profile-wrapper {
         display: flex;
     }
@@ -192,24 +210,35 @@ input[type="number"] {
         flex-wrap: wrap;
     }
 
+    .profile__name {
+        width: 508px;
+    }
+
+    .profile__weight {
+        width: 475px;
+    }
+
     .profile__e-mail {
-        width: 500px;    
+        width: 478px;
+    }
+
+    .profile__age {
+        width: 436px;
     }
 
     .profile__phone-nubmer {
         width: 472px;
-        width: 30%;
     }
 
     .profile__comment {
-        width: 1220px;
+        width: 1000px;
     }
 
-    .additionals__list {    
+    .additionals__list {
         flex-direction: row;
 
-       li {
-         padding-right: 100px;
-       }
+      li {
+        padding-right: 100px;
+      }
     }
 }
