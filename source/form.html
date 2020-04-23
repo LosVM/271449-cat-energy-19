@@ -6,28 +6,31 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+    <header class="page-header page-header--inner">
+      <div class="page-header__logo__wrapper">
+      <a href="#" class="page-header__logo">
         <img src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
       </a>
       <button type="button" class="main-nav__toggle">
         <img src="img/icon-mobile-menu.svg" width="25" height="19" alt="Меню">
       </button>
-      <!-- <nav class="main-nav">
-        <div class="main-nav__wrapper">
+    </div>
+      <nav class="main-nav">
+        <!-- <div class="main-nav__wrapper"> -->
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>-->
+        <!-- </div> -->
+      </nav>
+    </div>
     </header>
 
     <main>
@@ -35,6 +38,7 @@
         <h1 class="profile__title">Подбор программы</h1>
         <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="profile__form">
+          <div class="profile-wrapper">
           <fieldset class="profile__personal-info">
             <label>Имя:*
               <input class="profile__name" type="text" name="name" id="name" placeholder="Барсик" required>
@@ -60,14 +64,17 @@
               Не знаю(нужен ваш совет)
             </label>
           </fieldset>
+        </div>
           <fieldset class="profile__contact-info">
-            <legend>Контактные данные (владельца кота)</legend>
+            <legend>Контактные данные <br>(владельца кота)</legend>
+            <div class="contact-info-wrapper">
             <label> e-mail:*
               <input class="profile__e-mail" type="text" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
             </label>
             <label>Телефон:*
-              <input class="profile__number" type="tel" name="phone-number" id="phone-number" placeholder="8(960)900-60-90" required>
+              <input class="profile__phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8(960)900-60-90" required>
             </label>
+          </div>
           </fieldset>
           <fieldset class="profile__comment">
             <legend>Комментарий</legend>
@@ -101,9 +108,9 @@
                 </label>
               </li>
             </ul>
+          </fieldset>
             <input class="profile__submit" type="submit" value="Отправить заявку">
             <span class="profile__required-text">*-обязательные поля</span>
-          </fieldset>
         </form>
       </section>
 

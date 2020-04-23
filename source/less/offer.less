@@ -1,9 +1,15 @@
+.offer {
+    width: 300px;
+
+    margin: 0 auto;
+}
+
 .offer__text {
     display: flex;
     justify-content: space-between;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
 
     line-height: 20px;
 }
@@ -19,4 +25,60 @@
     font-size: 14px;
     color: #444444;
     font-weight: inherit;
+}
+
+@media (min-width: @tablet-width) {
+    .offer {
+        width: 768px;
+    }
+
+    .offer__text {
+        display: flex;
+        justify-content: space-between;
+
+        height: 200px;
+
+        p {
+            padding: 40px;
+        }
+    }
+
+    .offer__title {
+        width: 155px;
+    }
+
+    .offer__address {
+        width: 150px;
+    }
+
+    .offer__map {
+        width: 100%;
+        // height: 400px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .offer {
+        width: 1200px;
+
+        position: relative;
+    }
+
+    .offer__text {
+        position: absolute;
+
+        margin-top: 95px;
+        margin-left: 110px;
+
+        width: 570px;
+        height: 200px;
+
+        background-color: #ffffff;
+    }
+
+    .offer__map {
+        width: 100%;
+        // height: 400px;
+        background-color: gray;
+    }
 }

@@ -1,4 +1,12 @@
-.example {
+/* .example {
+    width: 320px;
+    background-color: #f2f2f2;
+}
+*/
+.example__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -51,6 +59,7 @@
 }
 
 .example__cost {
+    padding-left: 67px;
     margin-bottom: 44px;
 
     text-align: center;
@@ -69,4 +78,104 @@
     text-align: center;
 
     margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+    .example {
+        width: 768px;
+
+        margin: 0 auto;
+
+        background-color: #ffffff;
+    }
+
+    .example__wrapper {
+        width: 768px;
+    }
+
+    .example__title {
+        margin-bottom: 60px;
+
+        font-size: 60px;
+    }
+
+    .example__text {
+        padding-bottom: 56px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .example__content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .example__data-item {
+        margin-right: 45px;
+    }
+
+    .example__cost {
+        font-size: 20px;
+    }
+
+    .example__cat-image {
+        margin: 0;
+        background-color: #eaeaea;
+    }
+
+    .example__slider-before-after {
+        background-color: #eaeaea;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .example {
+        width: 1200px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        background-color: #eaeaea;
+    }
+
+    .example__wrapper {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .example__text {
+        width: 430px;
+        padding-top: 76px;
+    }
+
+    .example__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // width: 100%;
+    }
+
+    .example__data {
+        display: flex;
+        justify-content: space-between;
+        // margin-left: 50px;
+    }
+
+    .example__data-title {
+        font-size: 30px;
+    }
+
+    .example__data-info {
+        font-size: 14px;
+    }
+
+    .example__visual {
+        width: 50%;
+        height: 462px;
+    }
 }
